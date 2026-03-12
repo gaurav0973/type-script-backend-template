@@ -1,5 +1,5 @@
 import {z} from "zod"
-const todoValidationSchema = z.object({
+export const todoValidationSchema = z.object({
     id: z.string().describe("ID of todo"),
     title:z.string().describe("title of todo"),
     description: z.string().optional().describe("description of todo"),
